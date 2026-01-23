@@ -151,7 +151,7 @@ Click the red power button on the floating toolbar to disable PromptDC for the c
 
 ## Support
 
-Found a bug or need a new platform supported? Email us at **promptdc@gmail.com**
+Found a bug or need a new platform supported? Email us at **spromptdc@gmail.com**
 
 ---
 
