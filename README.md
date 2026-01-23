@@ -98,10 +98,19 @@ Our AI understands each platform's system prompt and optimizes your instructions
 ## Before & After
 
 **Before:**
-> "fix the login bug"
+> "create a food tracking app"
 
 **After (Enhanced):**
-> "Debug and fix the authentication issue in the login flow. Identify the root cause of the login failure, ensure proper error handling for invalid credentials, verify session token generation, and test the complete login-logout cycle. Maintain existing UI/UX and ensure backward compatibility."
+> "Design and implement a beautiful, responsive food tracking app inspired by modern wellness platforms like MyFitnessPal and Yazio. Start with a polished landing/home page featuring a hero section, call-to-action button, and a dynamic daily food log. Define a fresh, inviting design system using vibrant greens, oranges, and subtle gradients for a healthy, appealing look. Set up semantic color tokens for primary, accent, background, and surfaces.
+>
+> Implement the following features for the MVP:
+> - A hero section with app name, tagline, a visually striking food/health image, and a main CTA
+> - A daily food log component showing today's date, list of foods eaten with calories/macros
+> - An "Add Food" dialog/modal with fields for food name, calories, protein, carbs, and fats
+> - Responsive layout and SEO best practices with semantic HTML
+> - Lazy loading for images and subtle card/button animations
+>
+> Structure the codebase with small, reusable components (FoodLog, AddFoodModal, FoodEntryCard). All components must use design system tokens—no inline overrides."
 
 ## Why PromptDC?
 
@@ -142,9 +151,7 @@ Click the red power button on the floating toolbar to disable PromptDC for the c
 
 ## Support
 
-Found a bug or need a new platform supported?
-- [Report an Issue](https://github.com/promptdc/promptdc-chrome/issues)
-- [Contact Us](https://promptdc.com/contact)
+Found a bug or need a new platform supported? Email us at **promptdc@gmail.com**
 
 ---
 
