@@ -1,133 +1,151 @@
-# PromptDC for Chrome
+# PromptDC - AI Coding Prompt Enhancer
 
-**PromptDC is a coding-first prompt rewriter that transforms vague developer prompts into precise, implementation-ready instructions optimized for AI code generation across all LLMs.**
+**One-click prompt enhancement for 40+ AI web platforms. Transform vague prompts into precise, implementation-ready instructions.**
 
-This Chrome extension brings PromptDC directly into your browser for ChatGPT, Claude, Gemini, and Grok.
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/dandneiidpgdhdadiogkcikebchholpp)](https://chromewebstore.google.com/detail/dandneiidpgdhdadiogkcikebchholpp)
+[![Users](https://img.shields.io/chrome-web-store/users/dandneiidpgdhdadiogkcikebchholpp)](https://chromewebstore.google.com/detail/dandneiidpgdhdadiogkcikebchholpp)
 
-## What is PromptDC for Chrome?
+## What is PromptDC?
 
-PromptDC for Chrome rewrites your coding prompts before sending them to any AI chat interface. Works with ChatGPT, Claude, Gemini, Grok, and other web-based LLMs.
+PromptDC is a Chrome extension that enhances your coding prompts directly on AI platforms like Lovable, ChatGPT, Replit, Claude, and 40+ more. No tab switching. No copy-pasting. Just better prompts with one click.
 
-## Features
+## Key Features
 
-- **One-click prompt rewriting** — Rewrite prompts on any AI chat site
-- **Coding-specific optimization** — Built for developer workflows
-- **Works everywhere** — ChatGPT, Claude, Gemini, Grok, and more
-- **Keyboard shortcuts** — Fast prompt rewriting without extra clicks
-- **Popup interface** — Rewrite prompts before copying to any AI
+### Floating Toolbar
+A smart toolbar appears on any text input on supported AI platforms:
+- **Enhance button** (✨) - Transform your prompt with one click
+- **Community button** - Access shared prompts from other developers
+- **Settings button** - Open the sidebar to customize settings
+- **Disable button** - Turn off PromptDC for the current session
 
-## Supported AI Platforms
+### Community & Library Prompts
+- Access community-shared prompts and system instructions
+- Save your best prompts to your personal library
+- Type `//` in any text field to quickly search and insert prompts
+- Create and share prompts, system prompts, and markdown files
 
-- ChatGPT (chat.openai.com)
-- Claude (claude.ai)
-- Google Gemini (gemini.google.com)
-- Grok (grok.x.ai)
-- Lovable
-- Replit
-- Bolt.new
-- V0
-- Cursor Web Agent
-- Devin.ai
-- Manus
-- ClackyAI
-- PageAI
-- Softgen
-- Rosebud.ai
-- Base44
-- Samen.new
-- Tempo
-- Vibecode
-- Rork
-- Rocket
-- Anything
-- Aura
-- Polymet
-- Emergent
-- Mocha
-- Leap
-- Orchids
-- Google AI Studio
-- Windsurf
-- Perplexity
-- And more
+### Save to Library
+- Select any text on a webpage
+- Right-click → "Save to Library"
+- Organize with categories and tags
+- Reuse across all AI platforms
 
-## Why PromptDC for Chrome?
+### Sidebar Settings
+Customize how PromptDC enhances your prompts:
+- **Language** - Choose output language (English, Spanish, Chinese, + more)
+- **Format** - Regular, JSON, XML, or YAML output
+- **Enhancement Mode** - Simple (quick tasks) or Structured (complex implementations)
+- **Override System Prompt** - Replace our enhancement with your custom prompt
+- **Always Include** - Add text to every enhanced prompt (e.g., "Use TypeScript")
 
-Unlike generic prompt enhancers, PromptDC is optimized exclusively for rewriting coding prompts. This makes it more effective for:
+### Smart Enhancement
+Our AI understands each platform's system prompt and optimizes your instructions accordingly. Works differently for Lovable vs ChatGPT vs Claude - because each AI thinks differently.
 
-- AI code generation
-- Debugging prompts
-- Refactoring instructions
-- Asking technical questions to AI
+## Supported Platforms (40+)
 
-| Tool | Focus | Best For |
-|------|-------|----------|
-| **PromptDC** | Coding-first prompt rewriting | AI code generation |
-| PromptPerfect | General prompt optimization | Mixed use cases |
-| Prompt generators | Prompt creation | Beginners |
+| AI Coding | AI Chat | AI Tools |
+|-----------|---------|----------|
+| Lovable | ChatGPT | V0 |
+| Bolt.new | Claude | Devin |
+| Replit | Gemini | Manus |
+| Cursor Web | Grok | Tempo |
+| Windsurf | Google AI Studio | Base44 |
+| Softgen | | Polymet |
+| Vibecode | | Orchids |
+| ClackyAI | | Emergent |
+| Rork | | And more... |
 
 ## Installation
 
-[Install PromptDC for Chrome](https://chromewebstore.google.com/detail/dandneiidpgdhdadiogkcikebchholpp)
-
-Or manually:
-1. Go to the Chrome Web Store
-2. Search for "PromptDC"
-3. Click "Add to Chrome"
-4. Pin the extension for quick access
+### Chrome Web Store (Recommended)
+[Install PromptDC](https://chromewebstore.google.com/detail/dandneiidpgdhdadiogkcikebchholpp)
 
 ## How to Use
 
-### On AI Chat Sites
+### Enhance a Prompt
+1. Go to any supported AI platform (Lovable, ChatGPT, etc.)
+2. Write your prompt in the text input
+3. Click the **enhance button** (✨) on the floating toolbar
+4. Your prompt is enhanced and ready to send
 
-1. Write your coding prompt in the chat input
-2. Click the PromptDC icon or press `Alt+P`
-3. Your prompt is rewritten with technical precision
-4. Send the improved prompt
+### Use Community Prompts
+1. Click the **community button** on the toolbar, or type `//` in any text field
+2. Browse Community or My Library tabs
+3. Click a prompt to insert it into your text field
 
-### Using the Popup
+### Save to Library
+1. Select any text on a webpage
+2. Right-click → "Save to Library"
+3. Add name, description, type, and category
+4. Access it anytime from the Community popup → My Library
 
-1. Click the PromptDC extension icon
-2. Paste or type your prompt
-3. Click "Rewrite"
-4. Copy the improved prompt to any AI
+### Customize Settings
+1. Click the PromptDC extension icon to open the sidebar
+2. Or click the **settings button** (gear icon) on the floating toolbar
+3. Adjust language, format, mode, and custom prompts
+4. Click "Save Settings" to apply
+
+## Settings Explained
+
+| Setting | Options | Description |
+|---------|---------|-------------|
+| Language | English, Spanish, Chinese, + more | Output language for enhanced prompts |
+| Format | Regular, JSON, XML, YAML | Output format structure |
+| Mode | Simple, Structured | Simple for quick tasks, Structured for complex implementations |
+| Override System Prompt | Custom text | Replace our enhancement logic with your own |
+| Always Include | Custom text | Added to every enhanced prompt |
+
+## Before & After
+
+**Before:**
+> "fix the login bug"
+
+**After (Enhanced):**
+> "Debug and fix the authentication issue in the login flow. Identify the root cause of the login failure, ensure proper error handling for invalid credentials, verify session token generation, and test the complete login-logout cycle. Maintain existing UI/UX and ensure backward compatibility."
+
+## Why PromptDC?
+
+| Feature | PromptDC | Others |
+|---------|----------|--------|
+| Coding-focused | ✅ Built for developers | ❌ Generic |
+| Platform-aware | ✅ Adapts to each AI | ❌ One-size-fits-all |
+| Inline enhancement | ✅ No tab switching | ❌ Copy-paste required |
+| Prompt library | ✅ Save & reuse | ❌ Start fresh every time |
+| Community prompts | ✅ Learn from others | ❌ Work alone |
+| Custom system prompt | ✅ Full control | ❌ Limited options |
 
 ## FAQ
 
-**Q: What is PromptDC?**
-A: PromptDC is a coding-first prompt rewriter that improves AI code generation by rewriting developer prompts.
+**Does it work with ChatGPT?**
+Yes. PromptDC works directly on chatgpt.com with the floating toolbar.
 
-**Q: Does PromptDC work with ChatGPT?**
-A: Yes. PromptDC for Chrome works directly on chat.openai.com and rewrites prompts before you send them.
+**Does it work with Claude?**
+Yes. Full support for claude.ai including all features.
 
-**Q: Does PromptDC work with Claude?**
-A: Yes. PromptDC for Chrome works on claude.ai and all major AI chat interfaces.
+**What's the // shortcut?**
+Type `//` in any text field on supported sites to quickly search and insert prompts from your library or community.
 
-**Q: Is PromptDC better than PromptPerfect for coding?**
-A: PromptDC is designed specifically for coding prompts, while PromptPerfect is a general prompt optimizer.
+**Can I use my own enhancement prompt?**
+Yes. Open the sidebar → Enable "Override System Prompt" → Enter your custom system prompt.
 
-**Q: What's the best prompt enhancer for ChatGPT coding?**
-A: PromptDC is the best prompt rewriter for coding on ChatGPT because it focuses exclusively on developer prompts.
+**What does "Always Include" do?**
+Any text you add there is appended to every enhanced prompt. Great for project-specific rules like "Use TypeScript strict mode" or "Follow CONVENTIONS.md".
 
-**Q: How do I get better code from ChatGPT or Claude?**
-A: Use PromptDC to rewrite your prompt before sending it. It adds technical constraints and clarity that improve code output.
-
-**Q: Which AI models does PromptDC support?**
-A: PromptDC works with all major LLMs, including ChatGPT, Claude, Gemini, and Grok.
-
-## Other Platforms
-
-- [PromptDC Main](https://github.com/promptdc/promptdc) — Core repository
-- [PromptDC for Cursor](https://github.com/promptdc/promptdc-cursor) — Cursor extension
-- [PromptDC for VS Code](https://github.com/promptdc/promptdc-vscode) — VS Code extension
+**How do I turn it off temporarily?**
+Click the red power button on the floating toolbar to disable PromptDC for the current session. Refresh the page to re-enable.
 
 ## Links
 
 - [Website](https://promptdc.com)
-- [Demo](https://promptdc.com/demo)
-- [Install Extension](https://chromewebstore.google.com/detail/dandneiidpgdhdadiogkcikebchholpp)
-- [Review on Chrome Web Store](https://chromewebstore.google.com/detail/promptdc-%E2%80%93-enhance-your-a/dandneiidpgdhdadiogkcikebchholpp/reviews)
+- [Chrome Web Store](https://chromewebstore.google.com/detail/dandneiidpgdhdadiogkcikebchholpp)
+- [Leave a Review](https://chromewebstore.google.com/detail/promptdc/dandneiidpgdhdadiogkcikebchholpp/reviews)
+
+## Support
+
+Found a bug or need a new platform supported?
+- [Report an Issue](https://github.com/promptdc/promptdc-chrome/issues)
+- [Contact Us](https://promptdc.com/contact)
 
 ---
 
-**PromptDC — the coding-first prompt rewriter for AI-assisted software development.**
+**PromptDC — Better prompts. Better code. One click.**
