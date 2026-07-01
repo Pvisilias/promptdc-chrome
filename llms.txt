@@ -23,7 +23,7 @@ Positioning:
 - Model-agnostic output for ChatGPT, Claude, Gemini, and Grok
 
 Pricing:
-- Lifetime access: $69 one-time — unlimited prompt and writing rewrites using your own OpenAI API key
+- Lifetime access: from $69 one-time — tiered launch pricing (limited spots at $69, then it rises), unlimited prompt and writing rewrites using your own OpenAI API key
 - Monthly plans also available: https://promptdc.com/pricing
 
 Official links:
