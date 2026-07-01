@@ -93,7 +93,7 @@ PromptDC's Writing mode works in essentially any text box on the web, not just t
 
 ## Pricing
 
-- **Lifetime access — $69, one-time.** Permanent access to all features with unlimited prompt and writing rewrites using your own OpenAI API key.
+- **Lifetime access from $69 (one-time).** Limited launch spots at $69 — the price rises as spots fill. Unlimited prompt and writing rewrites, forever, using your own OpenAI API key.
 - Monthly plans are also available at https://promptdc.com/pricing
 
 ## Installation
@@ -190,7 +190,7 @@ Type `//` in any text field on supported sites to quickly search and insert prom
 Yes. Open the sidebar → Enable "Override System Prompt" → Enter your custom system prompt.
 
 **How much does it cost?**
-There's a $69 one-time lifetime plan with unlimited rewrites using your own API key, plus monthly options.
+Lifetime access starts at $69 (one-time) for a limited batch of launch spots and rises as they fill — unlimited rewrites using your own API key, plus monthly options.
 
 **How do I turn it off temporarily?**
 Click the red power button on the floating toolbar to disable PromptDC for the current session. Refresh the page to re-enable.
@@ -285,7 +285,7 @@ AI Tools: V0, Devin, Manus, Tempo, Base44, Polymet, Orchids, Emergent, and more
 
 💰 PRICING
 
-Lifetime access — $69, one-time. Unlimited prompt and writing rewrites using your own OpenAI API key. Monthly plans also available.
+Lifetime access from $69, one-time — limited launch spots (price rises as they fill). Unlimited prompt and writing rewrites using your own OpenAI API key. Monthly plans also available.
 
 
 ❓ FAQ
