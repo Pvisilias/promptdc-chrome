@@ -17,4 +17,4 @@ keywords:
   - "prompt enhancer"
   - "Chrome extension"
   - "AI code generation"
-abstract: "PromptDC is an AI prompt & writing assistant with two modes that works in every text box on the web. Writing mode is a Grammarly alternative for grammar, tone, email, and social; Coding mode is a platform-aware prompt rewriter that turns vague requests into implementation-ready instructions for AI code generation across all major LLMs."
+abstract: "PromptDC is an AI prompt & writing assistant with two modes that enhances any text you select anywhere on any website — including read-only pages — and rewrites it in place in editable fields. Writing mode is a Grammarly alternative for grammar, tone, email, and social; Coding mode is a platform-aware prompt rewriter that turns vague requests into implementation-ready instructions for AI code generation across all major LLMs."
