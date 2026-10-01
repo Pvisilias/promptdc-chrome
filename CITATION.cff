@@ -8,8 +8,8 @@ authors:
 url: "https://promptdc.com"
 repository-code: "https://github.com/Pvisilias/promptdc-chrome"
 license: "MIT"
-version: "5.0.0"
-date-released: "2026-07-01"
+version: "5.3.0"
+date-released: "2026-10-01"
 keywords:
   - "AI prompt assistant"
   - "AI writing assistant"
@@ -17,4 +17,5 @@ keywords:
   - "prompt enhancer"
   - "Chrome extension"
   - "AI code generation"
-abstract: "PromptDC is an AI prompt & writing assistant with two modes that enhances any text you select anywhere on any website — including read-only pages — and rewrites it in place in editable fields. Writing mode is a Grammarly alternative for grammar, tone, email, and social; Coding mode is a platform-aware prompt rewriter that turns vague requests into implementation-ready instructions for AI code generation across all major LLMs."
+abstract: "PromptDC is an AI prompt & writing assistant that enhances any text you select anywhere on any website — including read-only pages — and rewrites it in place in editable fields. Writing profiles handle grammar, tone, email, and social; the Code profile is a platform-aware prompt rewriter that turns vague requests into implementation-ready instructions for AI code generation across all major LLMs."
+
