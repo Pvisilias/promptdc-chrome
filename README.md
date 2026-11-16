@@ -1,5 +1,7 @@
 # PromptDC for Chrome
 
+Version 5.4.0 was submitted to the Chrome Web Store on 2026-11-16 and is in review.
+
 **Select any text on the web and improve it in one click. Fix grammar, summarize articles, explain passages, write emails, sharpen posts, and turn vague requests into implementation-ready coding prompts.**
 
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/dandneiidpgdhdadiogkcikebchholpp)](https://chromewebstore.google.com/detail/dandneiidpgdhdadiogkcikebchholpp)
@@ -38,7 +40,7 @@ Unlike single-purpose prompt or writing tools, PromptDC improves selected text a
 Each profile is a different rewrite:
 
 - **Writing profiles**: Grammar, Email, Social, Summarize, Reply, Professional, Concise, Explain, and Image Prompt. They run on any text you select across the web.
-- **The Code profile**, a platform-aware rewriter that turns vague requests into implementation-ready prompts with constraints, edge cases, and output format for AI code generation.
+- **The Code profile**, a rewriter that turns vague requests into implementation-ready prompts with constraints, edge cases, and output format for AI code generation.
 
 10 built-in profiles ship with the extension and you can create your own. PromptDC detects the site and picks a profile automatically: coding platforms get the Code profile, everywhere else gets a writing profile. You can override this with a default profile per website.
 
@@ -70,9 +72,9 @@ A smart toolbar appears beside any text you select, or when you focus and type i
 
 ### Sidebar Settings
 Customize how PromptDC rewrites your text:
-- **Language**: choose the output language (English, Spanish, Chinese, and more)
+Output follows the language of your text. There is no Language setting, language picker, per-profile output-language option, or premium language tier. To always get a specific language, say so in a profile’s system prompt or a custom Action.
 - **Custom Action**: give one selection its own instruction, up to 19,000 characters
-- **Override System Prompt**: replace our rewrite with your custom prompt
+- **System prompt**: view and edit a profile's rewrite instructions, then Save; built-in profiles offer Reset to default
 
 Three more controls belong to the **Code profile** only, because writing profiles carry their own system prompt and ignore them:
 - **Format**: Regular, JSON, XML, or YAML output
@@ -80,7 +82,7 @@ Three more controls belong to the **Code profile** only, because writing profile
 - **Always Include**: text added to every Code enhancement, such as "Use TypeScript"
 
 ### Smart Rewriting
-PromptDC understands each site's context and adapts. On writing sites it polishes grammar, tone, and clarity; on coding platforms it detects which tool you are in and applies a rewrite written for that tool, because Gmail, ChatGPT, and Lovable each need something different.
+PromptDC selects a default profile per site. Writing profiles polish grammar, tone, and clarity; Code uses one universal system prompt for every coding tool, terminal CLI, and AI model. In the sidebar, expand Code to view or edit its System prompt, then Save or Reset to default. Simple/Structured mode, Format, and Always Include apply on top of it. Code cannot be deleted. Site detection controls where text is read and replaced and which profile is the default; it never selects a system prompt. PromptDC never reads, detects, or reuses another tool's or model's system prompt.
 
 ## Supported Platforms (40+)
 
@@ -136,16 +138,15 @@ PromptDC works on any text you select across the web, not just the sites listed 
 ### Customize Settings
 1. Click the PromptDC extension icon to open the sidebar
 2. Or click the **settings button** (gear icon) on the floating toolbar
-3. Adjust language, profiles, and custom prompts
+3. Adjust profiles and custom prompts
 4. Click "Save Settings" to apply
 
 ## Settings Explained
 
 | Setting | Options | Applies to | Description |
 |---------|---------|------------|-------------|
-| Language | English, Spanish, Chinese, and more | Every profile | Output language for rewritten text |
 | Custom Action | Custom text | Every profile | A one-off instruction for the current selection |
-| Override System Prompt | Custom text | Every profile | Replace our rewrite logic with your own |
+| System prompt | Editable text | Every profile | Edit the profile's rewrite instructions and Save; reset built-in profiles to default |
 | Format | Regular, JSON, XML, YAML | Code profile | Output format structure |
 | Simple or Structured | Simple, Structured | Code profile | Simple for quick tasks, Structured for complex implementations |
 | Always Include | Custom text | Code profile | Added to every Code enhancement |
@@ -174,7 +175,7 @@ After (Rewritten):
 |---------|----------|--------|
 | Writing and coding | ✅ 10 profiles in one tool | ❌ Single-purpose |
 | Works on selected text anywhere | ✅ Pages, Gmail, Google Docs, chats, IDEs | ❌ One app or site |
-| Platform-aware | ✅ Adapts to each site | ❌ One-size-fits-all |
+| Per-website default profiles | ✅ Selects a profile per site | ❌ One-size-fits-all |
 | Editable-field rewriting | ✅ Replaces text in place | ❌ Copy-paste required |
 | Per-site profiles | ✅ Right rewrite automatically | ❌ Manual every time |
 | Prompt library | ✅ Save & reuse | ❌ Start fresh every time |
@@ -193,7 +194,7 @@ For the writing it covers, yes. The Grammar profile fixes grammar, tone, and cla
 Yes. PromptDC works directly on chatgpt.com and claude.ai with the floating toolbar, plus Gemini, Grok, and coding platforms.
 
 **Does it still help with coding prompts?**
-Yes. The Code profile is a platform-aware rewriter that turns vague requests into implementation-ready prompts for AI code generation, and it detects which coding tool you are on.
+Yes. The Code profile turns vague requests into implementation-ready prompts for AI code generation using the same editable system prompt across coding tools.
 
 **How does it choose a profile?**
 It detects the site. Coding platforms get the Code profile automatically; everywhere else gets a writing profile. You can set a default profile per website.
@@ -205,7 +206,7 @@ Those three belong to the Code profile. Writing profiles carry their own system 
 Type `//` in any text field to quickly search and insert prompts from your library or community.
 
 **Can I use my own custom prompt?**
-Yes. Open the sidebar, enable "Override System Prompt", and enter your custom system prompt.
+Yes. Open a profile in the sidebar, edit its System prompt, and choose Save. For Code, you can also choose Reset to default.
 
 **Do I need this if I have PromptDC for Desktop?**
 No. PromptDC for Desktop already covers every browser, app, IDE chat panel, and terminal on macOS and Windows. The Chrome extension adds an in-page toolbar and per-website defaults for browser-first workflows.
@@ -267,7 +268,7 @@ Select text anywhere: blogs, articles, Gmail, LinkedIn, X, Google Docs, ChatGPT,
 🧠 PROFILES
 
 • Writing profiles: Grammar, Email, Reply, Social, Explain, and Summarize, on any selected text
-• Code profile: platform-aware rewriting of vague requests into implementation-ready prompts for AI code generation
+• Code profile: one editable system prompt for rewriting vague requests into implementation-ready prompts across AI coding tools
 
 10 built-in profiles ship with the extension, plus custom profiles you create. PromptDC detects the site and picks one automatically. Set a default profile per website so the right rewrite always runs.
 
@@ -292,9 +293,9 @@ A smart toolbar appears beside selected text on any page, or when you focus and 
 
 ⚙️ SIDEBAR SETTINGS
 
-• Language: English, Spanish, Chinese, Portuguese, Korean, Russian, Vietnamese, Czech
+Output follows the language of your text. There is no Language setting, language picker, per-profile output-language option, or premium language tier. To always get a specific language, say so in a profile’s system prompt or a custom Action.
 • Custom Action: a one-off instruction for the current selection, up to 19,000 characters
-• Override System Prompt: replace our rewrite with your custom prompt
+• System prompt: view and edit a profile's rewrite instructions, then Save; reset built-in profiles to default
 
 Code profile only:
 • Format: Regular, JSON, XML, or YAML output
@@ -313,7 +314,7 @@ AI Tools: V0, Devin, Manus, Tempo, Base44, Polymet, Orchids, Emergent, and more
 
 ✅ 10 profiles in one tool, writing and coding
 ✅ Works on any selected text: blogs, articles, email, social, Google Docs, AI chats, and more; editable text updates in place and read-only results are copied
-✅ Platform-aware: adapts rewriting to each site, and detects which coding tool you are on
+✅ Per-website default profiles, with one editable Code system prompt across coding tools
 ✅ Inline rewriting: no tab switching required
 ✅ Per-site profiles: the right rewrite runs automatically
 ✅ Prompt library: save and reuse your best prompts

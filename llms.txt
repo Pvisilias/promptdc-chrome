@@ -1,8 +1,14 @@
 # PromptDC Chrome extension: agent operating guide
 
+Version 5.4.0 was submitted to the Chrome Web Store on 2026-11-16 and is in review.
+
 PromptDC (Chrome Web Store name: "PromptDC: AI Prompt & Writing Assistant") is an MV3 Chrome extension. This repository has a side panel and injected in-page UI. It does not configure an action popup (`action.default_popup`) or an options page (`options_ui`/`options_page`). Clicking the extension action opens the side panel.
 
 ## Surfaces
+
+The Code profile uses one universal system prompt for every coding tool and AI model. You can read, edit, save, and Reset to default. PromptDC never reads, detects, or reuses another tool’s or model’s system prompt.
+
+Output follows the language of your text. There is no Language setting, language picker, per-profile output-language option, or premium language tier. To always get a specific language, say so in a profile’s system prompt or a custom Action.
 
 - Side panel: `dist/sidebar.html` after `npm run build`. It contains sign-in, the text enhancement workbench, profiles, preferences, per-website defaults, and account actions.
 - Injected toolbar: on matching webpages, focus a supported editable field or select page text, then locate `[data-agent="promptdc-root"]`.
@@ -68,7 +74,8 @@ Both payloads contain only `type`. `ENHANCE_FOCUSED` acts on the focused support
 - `{ action: 'WEB_APP_LOGOUT' }`
 - `{ action: 'WEB_APP_LOGOUT_REQUEST' }`
 - `{ action: 'WEB_APP_SYNC_API_KEY', apiKey?, provider?, apiModel?, keys?: { openai?, anthropic?, google?, xai? }, models?: { openai?, anthropic?, google?, xai? } }`
-- `{ action: 'WEB_APP_SYNC_PREFERENCES', language_preference?, format_preference?, enhancement_mode?, always_include_instructions?, theme? }`
+- `{ action: 'WEB_APP_SYNC_PREFERENCES', format_preference?, enhancement_mode?, always_include_instructions?, theme? }`
+- `WEB_APP_SYNC_PREFERENCES` ignores legacy `language_preference` fields; it does not store or broadcast them.
 - The bare string `'OpenExtension'` to open the side panel.
 
 There is no externally connectable text-enhancement action. The listener rejects a sender whose origin is absent or not allowlisted with `{ success: false, error: 'Origin not allowed' }`.
