@@ -9,7 +9,7 @@ Version 5.4.0 was submitted to the Chrome Web Store on 2026-11-16 and is in revi
 
 ## What is PromptDC for Chrome?
 
-PromptDC for Chrome (Chrome Web Store: **PromptDC: AI Prompt & Writing Assistant**) is the browser extension of PromptDC, an AI prompt and writing assistant for macOS and Windows. Select any text on the web (blogs, articles, emails, social posts, Google Docs, or AI prompts) and run the active profile in one click. Editable text is rewritten in place; results from read-only pages are copied to your clipboard.
+PromptDC for Chrome (Chrome Web Store: **PromptDC: AI Prompt & Writing Assistant**) is the browser extension of PromptDC, a universal AI writing assistant and enhancer for macOS and Windows. Select any text on the web (blogs, articles, emails, social posts, Google Docs, or AI prompts) and run the active profile in one click. Editable text is rewritten in place; results from read-only pages are copied to your clipboard.
 
 PromptDC for Desktop is the flagship app for macOS and Windows: one install works everywhere (select text in any app, any browser, an IDE chat panel, or a terminal, press the shortcut, review the editable result, then Replace or Copy). PromptDC for Chrome is an optional addition with per-website default profiles that needs no Accessibility permission.
 
@@ -42,7 +42,7 @@ Each profile is a different rewrite:
 - **Writing profiles**: Grammar, Email, Social, Summarize, Reply, Professional, Concise, Explain, and Image Prompt. They run on any text you select across the web.
 - **The Code profile**, a rewriter that turns vague requests into implementation-ready prompts with constraints, edge cases, and output format for AI code generation.
 
-10 built-in profiles ship with the extension and you can create your own. PromptDC detects the site and picks a profile automatically: coding platforms get the Code profile, everywhere else gets a writing profile. You can override this with a default profile per website.
+10 built-in profiles ship with the extension and you can create your own with your rewrite instructions. For example, select a message and use an Action or custom profile saying "translate this to Chinese" to translate it in place. PromptDC detects the site and picks a profile automatically: coding platforms get the Code profile, everywhere else gets a writing profile. You can override this with a default profile per website.
 
 ## Key Features
 
@@ -72,7 +72,7 @@ A smart toolbar appears beside any text you select, or when you focus and type i
 
 ### Sidebar Settings
 Customize how PromptDC rewrites your text:
-Output follows the language of your text. There is no Language setting, language picker, per-profile output-language option, or premium language tier. To always get a specific language, say so in a profile’s system prompt or a custom Action.
+Output follows the language of your text. To translate or write in another language, name it in an Action or a custom profile, such as "translate this to Chinese".
 - **Custom Action**: give one selection its own instruction, up to 19,000 characters
 - **System prompt**: view and edit a profile's rewrite instructions, then Save; built-in profiles offer Reset to default
 
@@ -82,7 +82,7 @@ Three more controls belong to the **Code profile** only, because writing profile
 - **Always Include**: text added to every Code enhancement, such as "Use TypeScript"
 
 ### Smart Rewriting
-PromptDC selects a default profile per site. Writing profiles polish grammar, tone, and clarity; Code uses one universal system prompt for every coding tool, terminal CLI, and AI model. In the sidebar, expand Code to view or edit its System prompt, then Save or Reset to default. Simple/Structured mode, Format, and Always Include apply on top of it. Code cannot be deleted. Site detection controls where text is read and replaced and which profile is the default; it never selects a system prompt. PromptDC never reads, detects, or reuses another tool's or model's system prompt.
+PromptDC selects a default profile per site. Writing profiles polish grammar, tone, and clarity; Code uses one universal system prompt for every coding tool, terminal CLI, and AI model. In the sidebar, expand Code to view or edit its System prompt, then Save or Reset to default. Simple/Structured mode, Format, and Always Include apply on top of it. Code cannot be deleted. Site detection controls where text is read and replaced and which profile is the default; it never selects a system prompt. The rewrite instructions belong to PromptDC or the user; other tools' internal instructions are not accessed.
 
 ## Supported Platforms (40+)
 
@@ -105,7 +105,7 @@ PromptDC works on any text you select across the web, not just the sites listed 
 
 - **Pro**: $9/month (200 enhancements)
 - **Enterprise**: $15/month (unlimited enhancements)
-- **Developer Lifetime**: from $69 one-time with BYOK (bring your own API key from OpenAI, Anthropic, Google, or xAI). Keys are stored locally, never on PromptDC servers, and sent transiently through PromptDC's backend per request.
+- **Developer Lifetime**: from $69 one-time with BYOK (bring your own API key from OpenAI, Anthropic, Google, or xAI). The extension stores keys locally and sends them through PromptDC's backend with each enhancement request to the selected provider.
 - 14-day money-back guarantee on the first purchase
 - No free plan, no free trial, no free credits
 - Free browser tools are available at https://promptdc.com/tools (118 free tools; AI tools give 3 free runs per IP with no account as a sample, not a free plan)
@@ -185,10 +185,10 @@ After (Rewritten):
 ## FAQ
 
 **What is PromptDC for Chrome?**
-It is the browser extension of PromptDC, an AI prompt and writing app for macOS and Windows. It rewrites any text you select on the web, in place in editable fields and to your clipboard on read-only pages.
+It is an optional browser extension of PromptDC for Desktop, the universal AI writing assistant and enhancer for macOS and Windows. It rewrites any text you select on the web, in place in editable fields and to your clipboard on read-only pages.
 
 **Can PromptDC replace Grammarly?**
-For the writing it covers, yes. The Grammar profile fixes grammar, tone, and clarity on selected text anywhere, and the Email and Social profiles rewrite messages and posts in place. PromptDC also enhances AI prompts, which Grammarly does not.
+For the writing it covers, yes. The Grammar profile fixes grammar, tone, and clarity on selected text anywhere, and the Email and Social profiles rewrite messages and posts in place. PromptDC also enhances AI prompts. It rewrites on demand and does not show always-on grammar underlines.
 
 **Does it work with ChatGPT and Claude?**
 Yes. PromptDC works directly on chatgpt.com and claude.ai with the floating toolbar, plus Gemini, Grok, and coding platforms.
@@ -293,7 +293,7 @@ A smart toolbar appears beside selected text on any page, or when you focus and 
 
 ⚙️ SIDEBAR SETTINGS
 
-Output follows the language of your text. There is no Language setting, language picker, per-profile output-language option, or premium language tier. To always get a specific language, say so in a profile’s system prompt or a custom Action.
+Output follows the language of your text. To translate or write in another language, name it in an Action or a custom profile, such as "translate this to Chinese".
 • Custom Action: a one-off instruction for the current selection, up to 19,000 characters
 • System prompt: view and edit a profile's rewrite instructions, then Save; reset built-in profiles to default
 
@@ -335,7 +335,7 @@ AI Tools: V0, Devin, Manus, Tempo, Base44, Polymet, Orchids, Emergent, and more
 ❓ FAQ
 
 Q: Can PromptDC replace Grammarly?
-A: For the writing it covers, yes. The Grammar profile fixes grammar, tone, and clarity on selected text anywhere, Email and Social rewrite messages and posts in place, and PromptDC also enhances AI prompts.
+A: For the writing it covers, yes. The Grammar profile fixes grammar, tone, and clarity on selected text anywhere, Email and Social rewrite messages and posts in place, and PromptDC also enhances AI prompts. It rewrites on demand and does not show always-on grammar underlines.
 
 Q: Does it work with ChatGPT and Claude?
 A: Yes! It works directly on chatgpt.com and claude.ai, plus Gemini, Grok, and coding platforms.

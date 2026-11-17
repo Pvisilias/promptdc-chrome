@@ -17,5 +17,5 @@ keywords:
   - "prompt enhancer"
   - "Chrome extension"
   - "AI code generation"
-abstract: "Version 5.4.0 was submitted to the Chrome Web Store on 2026-11-16 and is in review. PromptDC is an AI prompt & writing assistant that enhances any text you select anywhere on any website — including read-only pages — and rewrites it in place in editable fields. Writing profiles handle grammar, tone, email, and social; the Code profile is a prompt rewriter that uses one editable system prompt across coding tools to turn vague requests into implementation-ready instructions for AI code generation across all major LLMs."
+abstract: "PromptDC for Chrome is an optional browser addition to PromptDC for Desktop, the universal AI writing assistant and enhancer for macOS and Windows. Pick or create a profile with your instructions to rewrite selected web text for grammar, emails, replies, summaries, and tone; translate selected messages by naming the target language in an Action or custom profile. Editable fields update in place; read-only results can be copied. The Code profile also rewrites AI coding prompts."
 
